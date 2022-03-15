@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: whoami
+  namespace: demo
+  labels:
+    name: whoami
+spec:
+  containers:
+    - name: whoami
+      image: containous/whoami:v1.4.0
+      ports:
+        - containerPort: 80
